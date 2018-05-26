@@ -1,0 +1,9 @@
+{
+  "name": "frappejs-webrtc",
+  "version": "1.0.0",
+  "description": "A simple demo application built using FrappeJS and WebRTC",
+  "main": "server.js",
+  "repository": "https://github.com/anto-christo/frappejs-webrtc.git",
+  "author": "Anto Christopher",
+  "license": "MIT"
+}
