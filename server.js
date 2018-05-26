@@ -6,4 +6,5 @@ server.start({
       dbPath: 'test.db',
     },
     staticPath: './',
+    models: require('./models')
 });
