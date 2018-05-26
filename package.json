@@ -5,5 +5,8 @@
   "main": "server.js",
   "repository": "https://github.com/anto-christo/frappejs-webrtc.git",
   "author": "Anto Christopher",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "frappejs": "^0.0.7"
+  }
 }
