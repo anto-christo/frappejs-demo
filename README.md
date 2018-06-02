@@ -1,2 +1,2 @@
-# frappejs-webrtc
-A simple demo application built using FrappeJS and WebRTC
+# frappejs-demo
+A simple demo application built using FrappeJS
