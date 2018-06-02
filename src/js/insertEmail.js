@@ -15,14 +15,13 @@ frappe.fetch = window.fetch.bind();
 frappe.db = new HTTPClient({ server });
 frappe.docs = new Observable();
 
-const sendBtn = document.getElementById("send");
+const senderEl = document.getElementById("sender");
+const receiverEl = document.getElementById("receiver");
+const subjectEl = document.getElementById("subject");
+const messageEl = document.getElementById("message");
+const saveBtn = document.getElementById("save");
 
-sendBtn.onclick = function(){
-
-    const senderEl = document.getElementById("sender");
-    const receiverEl = document.getElementById("receiver");
-    const subjectEl = document.getElementById("subject");
-    const messageEl = document.getElementById("message");
+saveBtn.onclick = function(){
 
     const sender = senderEl.value;
     const receiver = receiverEl.value;
@@ -38,4 +37,6 @@ sendBtn.onclick = function(){
     });
 
     data.insert();
+
+    alert("Draft saved successfully !");
 }

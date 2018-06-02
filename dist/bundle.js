@@ -11101,14 +11101,13 @@ var desk = (function () {
     frappejs.db = new http({ server });
     frappejs.docs = new observable();
 
-    const sendBtn = document.getElementById("send");
+    const senderEl = document.getElementById("sender");
+    const receiverEl = document.getElementById("receiver");
+    const subjectEl = document.getElementById("subject");
+    const messageEl = document.getElementById("message");
+    const saveBtn = document.getElementById("save");
 
-    sendBtn.onclick = function(){
-
-        const senderEl = document.getElementById("sender");
-        const receiverEl = document.getElementById("receiver");
-        const subjectEl = document.getElementById("subject");
-        const messageEl = document.getElementById("message");
+    saveBtn.onclick = function(){
 
         const sender = senderEl.value;
         const receiver = receiverEl.value;
@@ -11124,6 +11123,8 @@ var desk = (function () {
         });
 
         data.insert();
+
+        alert("Draft saved successfully !");
     };
 
     var src = {
